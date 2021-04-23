@@ -16,7 +16,7 @@ start-api: ## Run the api application
 	docker compose -f api/docker-compose.yml -p docker-demo-api up --build
 
 down: ## Destroy the application
-	docker compose -p test down
+	docker compose -p docker-demo-all down
 
 down-web: ## Destroy the web application
 	docker compose -f web/docker-compose.yml -p docker-demo-web down
